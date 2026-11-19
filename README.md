@@ -37,13 +37,13 @@ paper reports medians and agreement rates, which are stable under these variatio
 |---|---|---|
 | §VI Q1, Table 1 (oracle agreement) | `exp_witness.py` | `results_witness.txt` |
 | §VI Q2, Table 2 / Fig. 2 (affected set) | `affected_set_distribution.py` | `results_affected.txt` |
-| §VI Q3, Table 3 / Fig. 3 (static + SQL baselines) | `static_baseline.py` | `results_static_baseline.txt` |
-| §VI Q3, Table 4 (long stream) | `stream_and_fanout.py` | `results_stream_fanout.txt` |
-| §VI Q4, Table 5 (TPC-H-style four tables) | `tpc_h_multitable.py` | `results_tpch.txt` |
+| §VI Q2, Table 3 (cycle strategies: local/global singleton both miss, group witness = c) | `cycle_strategy_baseline.py` | `results_cycle_strategy.txt` |
+| §VI Q3, Table 4 / Fig. 3 (static + SQL baselines) | `static_baseline.py` | `results_static_baseline.txt` |
+| §VI Q3, Table 5 (long stream) | `stream_and_fanout.py` | `results_stream_fanout.txt` |
+| §VI Q4, Table 6 (TPC-H-style four tables) | `tpc_h_multitable.py` | `results_tpch.txt` |
+| §VI Q4, Table 7 (Flights schema-preserving augmentation, up to \|I\|=2×10⁵) | `flights_scaled.py` | `results_flights_scaled.txt` |
 | §VI Q5, Fig. 4 (diagnostic gap) | `diagnosis_gap_hard.py` | `results_gap_hard.txt` |
 | §VII Limitations (public-data audit, 161 tuples) | `audit_repair.py` | `results_audit.txt` |
-| §VI / §VII (Flights schema-preserving augmentation, up to \|I\|=2×10⁵) | `flights_scaled.py` | `results_flights_scaled.txt` |
-| §III Prop. 2 (cycle strategy baseline: local/global singleton both miss, group witness = c) | `cycle_strategy_baseline.py` | `results_cycle_strategy.txt` |
 
 `fk_closure.py` also implements the exact oracle and singleton/group checking used by the
 structural-boundary propositions in §III.
